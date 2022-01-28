@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+  
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px solid black;
+  }
+  
+  .description {
+    white-space: pre-wrap;
+  }
+  
+  .time-block {
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;
+  }
+  
+  .hour {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+  }
+  
+  .past {
+    background-color: #d3d3d3;
+    color: white;
+  }
+  
+  .present {
+    background-color: #ff6961;
+    color: white;
+  }
+  
+  .future {
+    background-color: #77dd77;
+    color: white;
+  }
+  
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #06aed5;
+    color: white;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .row {
+      white-space: normal;
+      color:black;
+  }
+
+  input {
+      border:none;
+      background: transparent;
+      column-span:all;
+      outline: none;
+      width:100%;
+      
+  }
+
+  .col-2, .col-8 {
+      max-height: 90px;
+  }
+
+ .right-col {
+     border-top: 1px dashed black;
+     border-left: 1px dashed black;
+     border-bottom: 1px dashed black;
+     display: flex;
+     justify-content: center;
+     align-items: center;  
+ }
+
+ .left-col {
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    border-right: 1px dashed black;
+ }
+
+ .col-8 {
+     border-top: 1px solid black;
+     border-bottom: 1px solid black;
+     border-radius: 0px;
+     overflow:auto;
+ }
+
+ .col-8:hover {
+     opacity: 50%;
+ }
+
+
+ .container-xl {
+     margin:auto;
+ }
+
+ .past {
+     background-color: rgba(128, 128, 128, 0.699);
+ }
+
+ .present {
+     background-color: rgba(255, 0, 0, 0.61);
+ }
+
+ .future {
+     background-color: rgba(46, 139, 86, 0.815);
+ }
