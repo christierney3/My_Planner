@@ -4,9 +4,19 @@ $('#currentDay').text(dayYear)
 //Create variable for the current hour using moment (logging it to make sure it worked)
 var currentTime = moment().format('H')
 console.log(currentTime)
-//Create variable for text area value
 
+var plannerText = document.getElementById('text-09')
 var saveBtn = $('.saveBtn')
+
+
+var getLocal = function() {
+    var description = localStorage.getItem('description');
+    plannerText.textContent = description;
+    console.log(description)
+    console.log(plannerText)
+}
+getLocal();
+
 
 //Create function to change color of background based on time of day
 var whichColor = function() {
@@ -37,12 +47,14 @@ var whichColor = function() {
 // Run the function
 whichColor();
 
+
 //Create function to store text data to local storage
 var addLocal = function() {
 
     var description = document.getElementById('text-input').value;
 
     localStorage.setItem('description', description)
+    getLocal();
 }
 //Create function so when the save button is pressed addLocal is called on
 $(saveBtn).click(function() {
