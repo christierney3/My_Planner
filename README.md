@@ -6,6 +6,12 @@
 
 * Using local storage and seperate variables for various input IDs I was able to link the button in each section to store the information entered by the user with keys that were called upon in the getLocal function (js:32). The information would then display in their respective sections of the page. I learned that if the ids for each input contained the same thing jQuery was unable to differentiate which section I was calling on. So by changing the ids of each from "text-input input-..." to just "input-..." it allowed jQuery to process the info that was typed to each section accordingly.
 
+* Technologies used: HTML, CSS, Javascript, Moment.js
+
+* License: MIT
+
+* Contact: chris.tierney3@gmail.com
+
 ![Screenshot of page](./assetts/images/Planner_SS.JPG)
 
 Links --> https://github.com/christierney3/My_Planner
